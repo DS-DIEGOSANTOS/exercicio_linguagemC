@@ -10,9 +10,9 @@ int main(){
         printf("--------------------------\n");
         printf("           DIVISAO          ");
         printf("\n--------------------------\n");
-        printf("\ndividendo:");
+        printf("dividendo:");
         scanf("%d",& dividendo);
-        printf("\ndivisor:");
+        printf("divisor:");
         scanf("%d",& divisor);
 
         if(divisor==0){
@@ -33,6 +33,5 @@ int main(){
     printf("\n--------------------------\n");
     system("pause");
 
-
-
+    return 0;
 }

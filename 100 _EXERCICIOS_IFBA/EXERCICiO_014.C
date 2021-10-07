@@ -33,4 +33,5 @@ int main(){
     tempo_total = t1+t2;
 
     printf("tempo do proximo semaforo: %.2f",tempo_total-3);
+    return 0;
 }

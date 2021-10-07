@@ -46,4 +46,6 @@ int main(){
         valor = valor%1;
     }
 
+    return 0;
+
 }

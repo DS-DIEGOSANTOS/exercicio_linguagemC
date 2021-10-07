@@ -1,26 +1,45 @@
 //26. Escreva um programa que leia 3 valores e escreva a soma dos 2 maiores.
 #include "stdio.h"
 #include "stdlib.h"
-#define q_valores 3
+
 int main (){
-    int a[q_valores],maior=0,maior1=0;
-    for(int i=0;i<q_valores;i++){
-        printf("digite o valor %d:",i+1);
-        scanf("%d",& a[i]);
+
+    int valor_1, valor_2, valor_3,maior_1=0,maior_2=0,soma;
+
+    printf("digite o valor 1: ");
+    scanf("%d",& valor_1);
+    printf("digite o valor 2: ");
+    scanf("%d", & valor_2);
+    printf("digite o valor 3: ");
+    scanf("%d",& valor_3);
+
+    if(valor_1>=valor_2 && valor_1>=valor_3){
+        maior_1=valor_1;
+    }    
+    else if(valor_2>=valor_1 && valor_2>=valor_3){
+        maior_1=valor_2; 
+    }    
+    else if(valor_3>=valor_2 && valor_3>=valor_1){
+        maior_1=valor_3;    
     }
-    for (int i =0; i < q_valores; i++){
-        if(a[i]>maior){
-            maior=a[i];
-        }
-    }
-    for(int i=0;i<q_valores;i++){
-        if(a[i]!=maior){
-            if(a[i]>maior1){
-                maior1=a[i];
-            }
-        }
+
+    if(valor_1!=maior_1)
+        if(valor_1>=maior_2)
+            maior_2 = valor_1;
+
+    if(valor_2!=maior_1)
+        if(valor_2>=maior_2)
+            maior_2 = valor_2;
+
+    if(valor_3!=maior_1)
+        if(valor_3>=maior_2)
+            maior_2 = valor_3;    
+
+    if(valor_1==valor_2 || valor_1==valor_3 || valor_2==valor_3){
+        maior_1=valor_1;
+        maior_2=maior_1;
     }
     
-    
-    printf("soma dos maiores: %d",maior+maior1);
-}
+    soma = maior_1+maior_2;
+    printf("soma dos 2 maiores: %d",soma );   
+}  

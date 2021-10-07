@@ -8,7 +8,7 @@ int main(){
     printf("digite um valor:");
     scanf("%d",& a);
 
-    if(a/2==0){
+    if(a%2==0){
         printf("o valor e par");
     }else{
         printf("o valor e impar");

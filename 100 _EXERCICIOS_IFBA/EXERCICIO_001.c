@@ -1,6 +1,5 @@
 //Dado o tamanho da base e da altura de um retângulo, calcular a sua área e o seu perímetro.
 #include "stdio.h"
-#include "windows.h"
 
 int main(){
     float base,altura,area;
@@ -13,8 +12,6 @@ int main(){
     area = base*altura/2;
 
     printf("\n\n\nanalizando os dados..");
-    sleep(2);
-
     system("cls");
 
     printf("----------------------------");

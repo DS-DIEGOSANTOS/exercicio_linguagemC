@@ -2,13 +2,18 @@
 //Km/h. Para tal, multiplique o valor em m/s por 3,6.
 #include "stdio.h"
 int main(){
-    float v_m;
+    float VELOCIDADE_M, VELOCIDADE_KM ;
     printf("---------------------------------\n");
     printf("  EXERCICIO 012\n");
     printf("---------------------------------\n");
     printf("\nvalor em m/s:");
-    scanf("%f",& v_m);
-    printf("\n\nvalor em km/h:%.2f\n",v_m*3.6);
+    scanf("%f",& VELOCIDADE_M);
+
+    VELOCIDADE_KM = VELOCIDADE_M*3.6;
+
+    printf("\n\nvalor em km/h:%.2f\n",VELOCIDADE_KM);
     system("pause");
-    
+
+    return 0;
+
 }

@@ -20,4 +20,5 @@ int main(){
     printf("o total de dias: %d\n",total);
     system("pause");
 
+    return 0;
 }

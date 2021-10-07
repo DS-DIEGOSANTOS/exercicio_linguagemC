@@ -9,12 +9,19 @@ int main(){
     printf("---------------------------------\n");
     printf("  EXERCICIO 015\n");
     printf("---------------------------------\n");
-    printf("\nsua altura");
+
+    printf("sua altura:");
     scanf("%f",& altura);
+
     printf("sua sombra:");
     scanf("%f",& s_pessoa);
-    printf("\nsombra do predio:");
+
+    printf("sombra do predio:");
     scanf("%f",& s_predio);
+
     altura_predio = altura*s_predio/s_pessoa;
-    printf("altura do predio: %.2f",altura_predio);    
+
+    printf("altura do predio: %.2f",altura_predio); 
+
+    return 0;
 }

@@ -1,7 +1,6 @@
 //3. Dado o tamanho do raio de uma circunferência, calcular a área e o perímetro da mesma.
 #include "stdio.h"
-#include "math.h"
-#include "windows.h"
+#define PI 3.1415926535897
 
 int main(){
     float raio,area,perimetro;
@@ -11,10 +10,9 @@ int main(){
     printf("\ndigite o tamanho do raio de uma circunferencia:");
     scanf("%f",& raio);
     printf("analisando dados...");
-    sleep(2);
-    //array´s para ser ultilazada como calculo 
-    area = M_PI*pow(raio,2);
-    perimetro =2*M_PI*raio;
+
+    area = PI * raio*raio;
+    perimetro = 2*PI*raio;
 
     system("cls");
     printf("-------------------------\n");
@@ -22,4 +20,5 @@ int main(){
     printf("\nArea: %.2f",area);
     printf("\nPerimetro: %.2f",perimetro);
     printf("\n-------------------------\n");
+    return 0;
 }

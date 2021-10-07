@@ -1,18 +1,29 @@
 //19.Escreva um programa que calcule a raiz de uma equação do primeiro grau.
 #include "stdio.h"
-#include "math.h"
+#include "stdlib.h"
+
 int main(){
-    int a,b,c,x;
+    float a,b,c,x;
+
     printf("---------------------------------\n");
     printf("  EXERCICIO 019\n");
     printf("\n---------------------------------\n");
-    printf("valor da incognita:");
-    scanf("%d",& a);
-    printf("valor do termo independente:");
-    scanf("%d",& b);
-    printf("resultado da equacao:");
-    scanf("%d",& c);
 
-    x = (c-b)/a;
-    printf("valor da raiz: %d",x);
+    printf("Valor do coeficiente angular:");
+    scanf("%f",& a);
+    printf("Valor do costante:");
+    scanf("%f",& b);
+  
+
+    if(a==0){
+        printf("erro! nao e possivel realiza a equacao.");
+        printf("\npor favor, tente corrigir o coeficiente angular");
+        exit(0);
+    }
+
+    x = -b/a;
+
+    printf("valor da raiz: %.1f",x);
+
+    return 0;
 }

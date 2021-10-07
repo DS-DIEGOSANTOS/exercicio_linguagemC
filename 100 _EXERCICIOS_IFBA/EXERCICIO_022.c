@@ -1,17 +1,16 @@
 //22. Escreva um programa que leia um número e exiba o seu módulo.
 #include "stdio.h"
 int main (){
-    int a;
+    float number;
     printf("---------------------------------\n");
     printf("  EXERCICIO 022\n");
     printf("\n---------------------------------\n");
     printf("digite um valor:");
-    scanf("%d",& a);
-    if(a>=0){
-    printf("\nmodulo: %d",a);
+    scanf("%f",& number);
+
+    if(number<0){
+        number*=(-1);     
     }
-    if(a<0){
-        a=a*(-1);
-        printf("\nmodulo: %d",a);
-    }
+
+    printf("\nmodulo: %.1f",number);
 }

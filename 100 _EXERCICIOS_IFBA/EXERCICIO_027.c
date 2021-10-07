@@ -9,25 +9,26 @@ int main (){
         printf("digite o valor %d:",i+1);
         scanf("%f",& a[i]);
     }
+
     for(int i=0;i<valores;i++){
-        if(a[i]>maior){
+        if(a[i]>maior)
             maior=a[i];
-        }
-    }
-    for(int i=0;i<valores;i++){
-        if(a[i]!=maior){
-            menor1=a[i];
-        }
-        if(a[i]!=maior || a[i]!=menor1){
-            menor2=a[i];
-        }
+        
     }
 
-    maior = maior*5;
+    for(int i=0;i<valores;i++){
+        if(a[i]!=maior)
+            if(a[i]>menor1)
+                menor1=a[i];
+            else
+                menor2=a[i];             
+    }
+
+    maior = maior*5.0;
     menor1= menor1*2.5;
     menor2= menor2*2.5;
-    media=(maior+menor2+menor1)/10;
+    media=(maior+menor2+menor1)/10.0;
 
-    printf("media: %.2f", media);
+    printf("media: %.2f  ", media);
 
 }

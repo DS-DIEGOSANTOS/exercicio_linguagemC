@@ -1,6 +1,6 @@
 //2. Dado o tamanho do lado de um quadrado, calcular a área e o perímetro do mesmo.
 #include "stdio.h"
-#include "math.h"
+
 
 int main(){
     float lado,area,perimetro;
@@ -11,11 +11,10 @@ int main(){
     scanf("%f",& lado);
 
     printf("analisando dados...");
-    sleep(2);
-    //array´s para calcula os valores da area e perimetro
+    
     perimetro = 4*lado;
-    area = pow(lado,2);
-
+    area = lado*lado;
+    
     system("cls");
 
     printf("------------------------------\n");

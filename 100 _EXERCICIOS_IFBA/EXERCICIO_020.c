@@ -9,17 +9,15 @@ que ela facilita a confecção e o consequente pagamento dos boletos das duas pr
 
 #include "stdio.h" 
 int main(){
-    float produto,b,c,d;
-    int a;
+    float produto,entrada;
+    int prestacao;
     printf("---------------------------------\n");
     printf("  EXERCICIO 020\n");
     printf("\n---------------------------------\n");
     printf("valor do produto:");
     scanf("%f",& produto);
-    a = produto/3;
-    b = produto/3-a;
-    c = b*3;
-    d = a+c;
-    
-    printf("\nentrada: %.2f\nprestacao: %d",d,a);
+
+    prestacao = produto/3;
+    entrada = produto-(prestacao*2);
+    printf("\nentrada: %.2f\nprestacao: %d.00",entrada,prestacao);
 }    
